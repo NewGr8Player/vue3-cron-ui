@@ -10,7 +10,7 @@
         <span class="label">{{ expressionLabel }}</span>
       </div>
       <span class="content">{{ expression }}</span>
-      <div style="float: right;">
+      <div style="float: right">
         <a-button type="primary" ghost @click="copyExpression">{{ copyLabel }}</a-button>
       </div>
     </div>
@@ -69,8 +69,8 @@ export default {
   },
   methods: {
     copyExpression() {
-      copyToClipboard(this.expression);
-    }
+      copyToClipboard(this.expression)
+    },
   },
   computed: {
     width() {

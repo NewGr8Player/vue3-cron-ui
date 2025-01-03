@@ -9,7 +9,7 @@ import {
   THURSDAY,
   FRIDAY,
   SATURDAY,
-} from '@/shared/constants.ts';
+} from '@/shared/constants.ts'
 
 export interface LocaleField {
   second: string
@@ -61,7 +61,7 @@ export interface Locale {
 }
 
 export interface I18nType {
-  [LOCALE_TYPE: string]: Locale
+  [LOCALE_TYPE:string]: Locale
 }
 
 const I18n: I18nType = {
@@ -96,7 +96,6 @@ const I18n: I18nType = {
       lastDayOfDate: 'Last day of current month',
       lastDayOfWeek: 'Last ',
       specify: 'Specify',
-      copy: 'Copy',
     },
     [WEEK]: {
       [SUNDAY]: 'Sunday',
@@ -110,6 +109,7 @@ const I18n: I18nType = {
     expression: 'The complete expression',
     preview: ['Last ', ' runtimes'],
     previewError: 'This expression is temporarily unparsed!',
+    copy: 'Copy',
   },
   [LOCALE_CN]: {
     field: {
@@ -159,4 +159,4 @@ const I18n: I18nType = {
   },
 }
 
-export default I18n;
+export default I18n

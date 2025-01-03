@@ -1,4 +1,4 @@
-import { message } from 'ant-design-vue';
+import { message } from 'ant-design-vue'
 
 /**
  * 使用最合适的方法将文本复制到剪贴板
@@ -22,9 +22,7 @@ export async function copyToClipboard(text: string) {
     element.style.fontSize = '12pt' // Prevent zooming on iOS
 
     const selection = document.getSelection()
-    const originalRange = selection
-      ? selection.rangeCount > 0 && selection.getRangeAt(0)
-      : null
+    const originalRange = selection ? selection.rangeCount > 0 && selection.getRangeAt(0) : null
 
     document.body.appendChild(element)
     element.select()
@@ -43,10 +41,10 @@ export async function copyToClipboard(text: string) {
 
     // Get the focus back on the previously focused element, if any
     if (previouslyFocusedElement) {
-      (previouslyFocusedElement as HTMLElement).focus();
+      ;(previouslyFocusedElement as HTMLElement).focus()
     }
   } finally {
-    console.log('Copied to clipboard:', text);
-    message.info('Copied to clipboard: '+ text);
+    console.log('Copied to clipboard:', text)
+    message.info('Copied to clipboard: ' + text)
   }
 }

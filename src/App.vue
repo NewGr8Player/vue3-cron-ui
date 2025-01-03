@@ -5,19 +5,19 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watchEffect } from 'vue';
-import Vue3Cron from './components/Cron.vue';
+import { ref, watchEffect } from 'vue'
+import Vue3Cron from './components/Cron.vue'
 
-const expression = ref('* * * * * ?');
-const locale = ref('cn');
-
-watchEffect(() => {
-  console.log('App watchEffect expression: ', expression.value);
-});
+const expression = ref('* * * * * ?')
+const locale = ref('cn')
 
 watchEffect(() => {
-  console.log('App watchEffect locale: ', locale.value);
-});
+  console.log('App watchEffect expression: ', expression.value)
+})
+
+watchEffect(() => {
+  console.log('App watchEffect locale: ', locale.value)
+})
 </script>
 
 <style scoped>
