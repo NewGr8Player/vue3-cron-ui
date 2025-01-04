@@ -5,10 +5,9 @@ on:
     branches:
       - master
 
-
 jobs:
   build:
-    runs-on: DOCKER_RUNNER
+    runs-on: gitea/runner-images:ubuntu-22.04
 
     strategy:
       matrix:
